@@ -199,20 +199,20 @@
         <header>
             <h1>How to Sideload iOS Apps Using Developer Certificate</h1>
             <div class="meta">
-                By Neo & Trey • Neosign
+                By Neo & TreyHam27 • Neosign
             </div>
         </header>
 
-        <p>Have a developer certificate and don't know how to use it? This guide will break down the process step by step to make sideloading easier for you!</p>
+        <p>Just recived a signing certificate but don't know where to start? Look no further than this step-by-step guide!</p>
 
         <div class="requirements-container">
             <div class="requirements-content">
                 <h3>Requirements</h3>
                 <ul class="requirements-list">
-                    <li>A developer certificate</li>
-                    <li>The Esign (No Logs) .ipa file</li>
-                    <li>While this guide is made for Esign, I have linked the Feather .ipa as well if you want to give that a shot</li>
-                    <li>Other .ipa files you want to install</li>
+                    <li>Signing Certificate</li>
+                    <li>The Esign (No Logs) .iPA file</li>
+                    <li>The apps (.iPA) that you would like to install</li>
+                    <li>Feather(optional/not reccomended)</li>
                 </ul>
             </div>
             
@@ -241,33 +241,32 @@
             </div>
         </div>
 
-        <h2>1. Installing ESign Using an Online .ipa Installer</h2>
-        <p>First, we need to get ESign onto your device using an online .ipa installer. For the purposes of this tutorial, we have chosen Kravasign as it is one of the most reliable options.</p>
-        <p>Head to this <a href="https://sign.kravasign.com/">link</a> and fill out all the information it requires.
-        You will need to provide the .ipa file, the certificate, and the password.</p>
+        <h2>1. Install Esign</h2>
+        <p>The first step is to install Esign onto your device using a web installer.</p>
+        <p>Head to this <a href="https://sign.kravasign.com/">link</a> and upload the following: The Esign (no logs) .ipa file, your certificate's .p12 file, your certificate's .mobileprovision file, and your certificate's password.</p>
         
         <div class="image-placeholder">
             <img src="https://raw.githubusercontent.com/TreySign/Sideloading-Guide/refs/heads/main/Assets/Kravasign.png" alt="Kravasign Interface" />
         </div>
-        <p>After uploading all your files, press upload. You should then get a direct install link, asking you to download the Esign app to your device.</p>
+        <p>Finally, press "Upload and Sign". Once the file is uploaded, you will be prompted with an "install ipa" button, Press it and accept the prompts to install the app onto your device.</p>
 
-        <h2>2. Setting Up ESign</h2>
-        <p>If this is your first time sideloading any developer apps, you may need to turn on developer mode in settings. You can do this by going to Settings > Privacy and Security > Developer Mode.</p>
+        <h2>2. Configure Esign</h2>
+        <p>If this is your first time sideloading, you will be prompted to enable developer mode upon opening Esign. You can do this by going to Settings > Privacy and Security > Developer Mode.</p>
         
         <div class="image-placeholder">
             <img src="https://raw.githubusercontent.com/TreySign/Sideloading-Guide/refs/heads/main/Assets/Developer%20Mode.avif" alt="Developer Mode Settings" />
         </div>
 
-        <h2>3. Importing Your Developer Certificate</h2>
-        <p>To begin using ESign to sideload apps, you'll need to import your developer certificate. Here's how:</p>
+        <h2>3. Import Certificate</h2>
+        <p>To begin sideloading apps with Esign, you'll need to import your certificate. Here's how:</p>
         
         <ol>
-            <li>In ESign, navigate to the Files tab (leftmost tab in the interface)</li>
-            <li>Press on the 3 dots on the top right corner and locate the import button</li>
-            <li>Select your certificate .zip file when prompted</li>
-            <li>Once imported, tap the .zip file; Press unzip to extract its contents</li>
-            <li>After extraction, you can safely delete the original .zip file</li>
-            <li>Open the folder, and import the .p12 and .mobileprovision files</li>
+            <li>Within ESign, navigate to the Files tab (leftmost tab in the interface).</li>
+            <li>Tap the 3 dots in the top right corner and select the import button.</li>
+            <li>Locate and select your certificate .zip file when prompted.</li>
+            <li>Once imported, tap on the .zip file and press unzip to extract its contents.</li>
+            <li>After extraction, you can safely delete the original .zip file.</li>
+            <li>Now, Open the folder and import the .p12 and .mobileprovision files (see picture).</li>
         </ol>
 
         <div class="image-placeholder">
@@ -278,16 +277,16 @@
         <p>Now that your certificate is imported, you can begin signing and installing apps:</p>
 
         <ol>
-            <li>Press on the 3 dots on the upper right corner and import your .ipa file</li>
+            <li>Tap the 3 dots located in the upper right corner of the files tab and import your .ipa file</li>
             <li>After importing, the .ipa, tap on the .ipa file and press Import App library</li>
-            <li>Head over to the apps tab; This is the 2nd tab from the left in the interface</li>
+            <li>Head over to the apps tab (This is the 2nd tab from the left in the interface)</li>
             <li>Tap on the app you want to install</li>
-            <li><strong>Don't tap the "Install" button directly - this won't work!</strong></li>
-            <li>Instead, tap "SIGNATURE" first</li>
+            <li><strong>Don't tap the "Install" button directly - <em></em>this won't work!<em/></strong></li>
+            <li>Instead, tap "SIGNATURE"</li>
             <li>When prompted, tap "Signature" again to begin the signing process</li>
             <li>Once signing is complete, tap "Install"</li>
             <li>Approve the installation prompt that appears</li>
-            <li>You should now see the signed app installed on your homescreen/app library</li>
+            <li>You should now see the signed app installed on your homescreen or in your app library!</li>
         </ol>
 
         <div class="image-placeholder">
@@ -297,8 +296,8 @@
         <div class="requirements-box">
             <h3>Tips for Successful Installation</h3>
             <ul class="requirements-list">
-                <li>Make sure your device has sufficient storage space</li>
-                <li>Keep your device connected to stable internet during the signing process</li>
+                <li>Ensure your device has sufficient storage space</li>
+                <li>Retain a stable internet connection throughout this process</li>
                 <li>Verify that Developer Mode is properly enabled in Settings</li>
             </ul>
         </div>
