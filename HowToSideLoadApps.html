@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Sideload iOS Apps</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            font-family: -apple-system, system-ui, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #4a9eff;
+            margin-top: 40px;
+        }
+
+        h3 {
+            color: #e0e0e0;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .meta {
+            color: #888;
+            font-size: 0.9em;
+            margin-bottom: 40px;
+        }
+
+        .requirements-container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            background-color: #2a2a2a;
+            border-left: 4px solid #4a9eff;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        @media (min-width: 768px) {
+            .requirements-container {
+                flex-direction: row;
+            }
+            
+            .requirements-content {
+                flex: 1;
+            }
+            
+            .download-section {
+                flex: 1;
+            }
+        }
+
+        .requirements-content {
+            padding-right: 20px;
+        }
+
+        .requirements-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .requirements-list li {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            color: #e0e0e0;
+        }
+
+        .requirements-list li:before {
+            content: "•";
+            color: #4a9eff;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .download-section {
+            background-color: transparent;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+            width: 100%;
+        }
+
+        .download-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .download-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 100%;
+            background-color: #3a3a3a;
+            color: #4a9eff;
+            text-decoration: none;
+            padding: 15px 25px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            border: 1px solid #4a9eff;
+            box-sizing: border-box;
+        }
+
+        .download-button:hover {
+            background-color: #4a9eff;
+            color: #1a1a1a;
+            transform: translateY(-2px);
+        }
+
+        .download-button span {
+            margin-left: 10px;
+        }
+
+        .file-info {
+            font-size: 0.8em;
+            color: #888;
+            margin-top: 5px;
+        }
+
+        .image-placeholder {
+            background-color: #2a2a2a;
+            border-radius: 8px;
+            padding: 7px;
+            margin: 20px auto;
+            text-align: center;
+            color: #888;
+            max-width: 800px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-placeholder img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 0;
+            display: block;
+        }
+
+        .requirements-box {
+            background-color: #2a2a2a;
+            border-left: 4px solid #4a9eff;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        p {
+            margin: 20px 0;
+        }
+
+        ol {
+            padding-left: 20px;
+        }
+
+        ol li {
+            margin-bottom: 12px;
+            color: #e0e0e0;
+        }
+
+        a {
+            color: #4a9eff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>How to Sideload iOS Apps Using Developer Certificate</h1>
+            <div class="meta">
+                By Neo & Trey • Neosign
+            </div>
+        </header>
+
+        <p>Have a developer certificate and don't know how to use it? This guide will break down the process step by step to make sideloading easier for you!</p>
+
+        <div class="requirements-container">
+            <div class="requirements-content">
+                <h3>Requirements</h3>
+                <ul class="requirements-list">
+                    <li>A developer certificate</li>
+                    <li>The Esign (No Logs) .ipa file</li>
+                    <li>While this guide is made for Esign, I have linked the Feather .ipa as well if you want to give that a shot</li>
+                    <li>Other .ipa files you want to install</li>
+                </ul>
+            </div>
+            
+            <div class="download-section">
+                <h3>Downloads</h3>
+                <div class="download-grid">
+                    <div>
+                        <a href="https://example.com/downloads/esign.ipa" class="download-button">
+                             <span>Esign (No Logs)</span>
+                        </a>
+                        <div class="file-info">Version 5.0.0 • 45MB</div>
+                    </div>
+                    <div>
+                        <a href="https://github.com/khcrysalis/Feather/releases/download/v1.3.1/feather_v1.3.1.ipa" class="download-button">
+                             <span>Feather</span>
+                        </a>
+                        <div class="file-info">Version 1.3.1 • 12.1MB</div>
+                    </div>
+                    <div>
+                        <a href="https://github.com/neoarz/Countdown-App/releases/latest/download/Countdown.ipa" class="download-button">
+                             <span>Countdown App</span>
+                        </a>
+                        <div class="file-info">My App • 600KB</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>1. Installing ESign Using an Online .ipa Installer</h2>
+        <p>First, we need to get ESign onto your device using an online .ipa installer. For the purposes of this tutorial, we have chosen Kravasign as it is one of the most reliable options.</p>
+        <p>Head to this <a href="https://sign.kravasign.com/">link</a> and fill out all the information it requires.
+        You will need to provide the .ipa file, the certificate, and the password.</p>
+        
+        <div class="image-placeholder">
+            <img src="/Assets/Kravasign.png" alt="Kravasign Interface" />
+        </div>
+        <p>After uploading all your files, press upload. You should then get a direct install link, asking you to download the Esign app to your device.</p>
+
+        <h2>2. Setting Up ESign</h2>
+        <p>If this is your first time sideloading any developer apps, you may need to turn on developer mode in settings. You can do this by going to Settings > Privacy and Security > Developer Mode.</p>
+        
+        <div class="image-placeholder">
+            <img src="/Assets/Developer Mode.avif" alt="Developer Mode Settings" />
+        </div>
+
+        <h2>3. Importing Your Developer Certificate</h2>
+        <p>To begin using ESign to sideload apps, you'll need to import your developer certificate. Here's how:</p>
+        
+        <ol>
+            <li>In ESign, navigate to the Files tab (leftmost tab in the interface)</li>
+            <li>Press on the 3 dots on the top right corner and locate the import button</li>
+            <li>Select your certificate .zip file when prompted</li>
+            <li>Once imported, tap the .zip file; Press unzip to extract its contents</li>
+            <li>After extraction, you can safely delete the original .zip file</li>
+            <li>Open the folder, and import the .p12 and .mobileprovision files</li>
+        </ol>
+
+        <div class="image-placeholder">
+            <img src="/Assets/EsignCert.png" alt="Kravasign Interface" />
+        </div>
+
+        <h2>4. Signing and Installing Apps</h2>
+        <p>Now that your certificate is imported, you can begin signing and installing apps:</p>
+
+        <ol>
+            <li>Press on the 3 dots on the upper right corner and import your .ipa file</li>
+            <li>After importing, the .ipa, tap on the .ipa file and press Import App library</li>
+            <li>Head over to the apps tab; This is the 2nd tab from the left in the interface</li>
+            <li>Tap on the app you want to install</li>
+            <li><strong>Don't tap the "Install" button directly - this won't work!</strong></li>
+            <li>Instead, tap "SIGNATURE" first</li>
+            <li>When prompted, tap "Signature" again to begin the signing process</li>
+            <li>Once signing is complete, tap "Install"</li>
+            <li>Approve the installation prompt that appears</li>
+            <li>You should now see the signed app installed on your homescreen/app library</li>
+        </ol>
+
+        <div class="image-placeholder">
+            <img src="/Assets/SignApp.png" alt="Kravasign Interface" />
+        </div>
+
+        <div class="requirements-box">
+            <h3>Tips for Successful Installation</h3>
+            <ul class="requirements-list">
+                <li>Make sure your device has sufficient storage space</li>
+                <li>Keep your device connected to stable internet during the signing process</li>
+                <li>Verify that Developer Mode is properly enabled in Settings</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
